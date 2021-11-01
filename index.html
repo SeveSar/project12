@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container--big">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+        <div class="header__issue">
+          Оформите <span class="red-text">КАСКО и ОСАГО онлайн</span> – удобно и быстро!
+        </div>
+        <div class="header__actions main-actions">
+          <div class="social">
+            <a href="#" class="social__link">
+              <img src="./img/telegramm.svg" alt="">
+            </a>
+            <a href="#" class="social__link">
+              <img src="./img/whatsapp.svg" alt="">
+            </a>
+          </div>
+          <a href="tel:88002001050" class="phone">8 800 200 10 50</a>
+          <button class="btn btn--text" data-modal="#modal-order">
+            <span class="btn__text">Заказать звонок</span>
+            <span class="btn__icon">
+              <img src="./img/arrow-right.svg" alt="">
+            </span>
+          </button>
+        </div>
+        <button class="burger">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <nav>
+      <a href="#advantages">Преимущества</a>
+      <a href="#form-police">Оформление полиса</a>
+      <a href="#partners">Наши портнёры</a>
+      <a href="#questions">Вопрос - Ответ</a>
+    </nav>
+    <div class="header__actions main-actions">
+      <a href="tel:88002001050" class="phone">8 800 200 10 50</a>
+      <button class="btn btn--text">
+        <span class="btn__text" data-modal="#modal-order">Заказать звонок</span>
+        <span class="btn__icon">
+          <img src="./img/arrow-right.svg" alt="">
+        </span>
+      </button>
+    </div>
+  </div>
+  <section class="intro">
+    <div class="container">
+      <div class="intro__inner">
+        <div class="intro__content rise-up">
+          <div class="intro__text">
+            Система расчета покажет все доступные предложения
+          </div>
+          <h1 class="intro__title main-title">
+            <span class="red-text">Введите госномер</span>
+            автомобиля<br>
+            для автозаполнения
+            и номер телефона
+          </h1>
+          <form action="" class="form">
+            <div class="form__wrap">
+              <div class="form__group">
+                <label class="label" for="gos">
+                  Введите госномер
+                </label>
+                <input type="text" id="gos" data-gos-input class="form__control form__control--gos selector" placeholder="А 000 АА 000">
+              </div>
+              <div class="form__group">
+                <label class="label" for="phone">
+                  Введите номер телефона
+                </label>
+                <input id="phone-1" class="form__control form__input form__control--tel form__input_tel" type="tel"
+                  name="phone" autocomplete="off" data-error="Введите номер телефона" data-intl-tel-input-id="4"
+                  placeholder="999 999 9999" im-insert="true">
+                <input type="hidden" class="code-country">
+              </div>
+            </div>
+            <button class="btn btn--main btn--big" type="submit">Рассчитать стоимость</button>
+            <div class="form__notify">
+              <span class="icon">
+                <img src="./img/icons/notify-icon.svg" alt="">
+              </span>
+              <p>
+                Заполнение формы не предполагает обязательное оформление страховки. Система посчитает стоимость полиса и
+                предложит лучшие варианты.
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="intro__img">
+          <img src="./img/intro-img.png" alt="person">
+          <div class="intro__img-content">
+            <div class="intro__img-subtitle">Оформление онлайн</div>
+            <div class="intro__img-title red-text">КАСКО / ОСАГО</div>
+          </div>
+          <div class="btn btn--main btn--small" data-modal="#modal-order">
+            Оставить заявку
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <h2 class="main-title">
+        Преимущества
+      </h2>
+      <div class="advantages__inner">
+        <div class="advantages__col">
+          <div class="advantages__item">
+            <h4 class="advantages__item-title">
+              Расчет стоимости
+              и оформление
+              полиса происходит
+              <span class="red-text">в онлайн-формате</span>
+            </h4>
+            <div class="advantages__item-img">
+              <img src="./img/advantages-item_1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="advantages__col">
+          <div class="advantages__item">
+            <h4 class="advantages__item-title">
+              Для получения полиса
+              <span class="red-text">не нужно ехать</span> в офис
+              компании, он придет
+              на электронную почту
+            </h4>
+            <div class="advantages__item-img">
+              <img src="./img/advantages-item_2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="advantages__col">
+          <div class="advantages__item">
+            <h4 class="advantages__item-title">
+              Полис <span class="red-text">можно не распечатывать</span>,
+              он имеет ту же юридическую
+              силу, что и бумажный, и всегда
+              под рукой – в телефоне
+            </h4>
+            <div class="advantages__item-img">
+              <img src="./img/advantages-item_3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="help-block help-block--first">
+    <div class="container">
+      <div class="help-block__inner">
+        <div class="help-block__content">
+          <h2 class="help-block__title main-title">
+            Удобная система
+            расчета <span class="red-text">по вашим
+              параметрам</span>
+          </h2>
+          <div class="help-block__descr">
+            <p>
+              Вы сами выбираете подходящее
+              и выгодное предложение
+            </p>
+            <p>
+              Указывается полная персональная
+              стоимость с учетом всех условий
+            </p>
+          </div>
+          <div class="help-block__action">
+            <button class="btn btn--main" data-modal="#modal-fill">Рассчитать стоимость <img src="./img/btn-icon.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="help-block__img">
+          <img src="./img/help-block_img-1.png" alt="person">
+          <div class="help-block__img-checked">
+            <img src="./img/help-block_tick.svg" alt="tick">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="help-block help-block--reverse">
+    <div class="container">
+      <div class="help-block__inner">
+        <div class="help-block__content rise-up">
+          <h2 class="help-block__title main-title">
+            Скидки<br>
+            и оформление
+            <span class="red-text">онлайн </span>
+          </h2>
+          <div class="help-block__descr">
+            <p>
+              Страховые компании предоставляют
+              скидки водителям с безаварийной
+              историей, что позволяет оформить полис
+              на максимально выгодных условиях.
+            </p>
+            <p>
+              Вы получаете полис на электронную почту сразу после оплаты.
+            </p>
+          </div>
+          <div class="help-block__action">
+            <button class="btn btn--main" data-modal="#modal-fill">Рассчитать стоимость <img src="./img/btn-icon.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="help-block__img">
+          <img src="./img/help-block_img-2.png" alt="person">
+          <div class="help-block__img-checked">
+            <img src="./img/help-block_tick.svg" alt="tick">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="help-block help-block--last">
+    <div class="container">
+      <div class="help-block__inner">
+        <div class="help-block__content">
+          <h2 class="help-block__title main-title">
+            <span class="red-text">Поддержка</span><br>
+            в любое время<br>
+            <span class="red-text">24/7</span>
+          </h2>
+          <div class="help-block__descr">
+            <p>
+              Получите консультацию менеджера и помощь в оформлении полиса онлайн в любое время 24/7
+            </p>
+          </div>
+          <div class="help-block__action">
+            <button class="btn btn--main" data-modal="#modal-fill">Рассчитать стоимость <img src="./img/btn-icon.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="help-block__img">
+          <img src="./img/help-block_img-3.png" alt="person">
+          <div class="help-block__img-checked">
+            <img src="./img/help-block_tick.svg" alt="tick">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="police" id="form-police">
+    <div class="container rise-up">
+      <h2 class="main-title main-title--white">
+        Оформление полиса
+      </h2>
+      <img class="police__img" src="./img/car-bg.svg" alt="">
+      <div class="police__inner">
+        <div class="police__col">
+          <div class="police__item">
+            <div class="police__step red-text">
+              Шаг 1
+            </div>
+            <h4 class="police__title">Ввод данных автомобиля</h4>
+            <div class="police__text">
+              Для расчета полной персональной стоимости полиса КАСКО или ОСАГО необходимо ввести данные вашего
+              автомобиля
+            </div>
+          </div>
+        </div>
+        <div class="police__col">
+          <div class="police__item">
+            <div class="police__step red-text">
+              Шаг 2
+            </div>
+            <h4 class="police__title">Выбор предложения</h4>
+            <div class="police__text">
+              50car предоставит все актуальные варианты, их стоимость и условия для выбора наиболее выгодного
+              предложения от компаний- партнеров
+            </div>
+          </div>
+        </div>
+        <div class="police__col">
+          <div class="police__item">
+            <div class="police__step red-text">
+              Шаг 3
+            </div>
+            <h4 class="police__title">Оплата и
+              получение полиса</h4>
+            <div class="police__text">
+              Безопасная и быстрая оплата. Полис приходит на вашу электронную почту
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners" id="partners">
+    <div class="container container--big">
+      <h2 class="main-title">Наши партнеры</h2>
+      <div class="partners__inner">
+        <div class="partners__item">
+          <img src="./img/partners-1.svg" alt="">
+        </div>
+        <div class="partners__item">
+          <img src="./img/partners-2.svg" alt="">
+        </div>
+        <div class="partners__item">
+          <img src="./img/partners-3.svg" alt="">
+        </div>
+        <div class="partners__item">
+          <p>
+            и многие другие
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="questions" id="questions">
+    <div class="container container--big">
+      <h2 class="main-title">Часто задаваемые вопросы </h2>
+      <div class="questions__inner">
+        <div class="questions__item">
+          <div class="questions__item-caption">
+            <div class="questions__item-question">
+              <span class="questions__item-number red-text">1.</span>
+              <div class="questions__item-subtitle">Для чего нужен полис КАСКО и ОСАГО?</div>
+            </div>
+            <button class="questions__item-btn">
+            </button>
+          </div>
+          <div class="questions__item-body">
+            <div class="body-wrap">
+              <p>
+                ОСАГО – обязательный вид страхования, который обеспечивает компенсацию ущерба пострадавшей стороне. При
+                этом водитель-виновник берет расходы на ремонт или восстановление своего автомобиля на себя.
+              </p>
+              <p>
+                Полис КАСКО – добровольное страхование, которое обеспечивает сохранность автомобиля водителя, независимо
+                является он виновником при наступлении страхового случая или нет.
+                КАСКО компенсирует как ущерб, нанесенный вашему автомобилю, так и его угон или тотальную гибель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="questions__item">
+          <div class="questions__item-caption">
+            <div class="questions__item-question">
+              <span class="questions__item-number red-text">2.</span>
+              <div class="questions__item-subtitle">Отличие КАСКО от ОСАГО</div>
+            </div>
+            <button class="questions__item-btn">
+            </button>
+          </div>
+          <div class="questions__item-body">
+            <div class="body-wrap">
+              <p>
+                ОСАГО – обязательный вид страхования, который обеспечивает компенсацию ущерба пострадавшей стороне. При
+                этом водитель-виновник берет расходы на ремонт или восстановление своего автомобиля на себя.
+              </p>
+              <p>
+                Полис КАСКО – добровольное страхование, которое обеспечивает сохранность автомобиля водителя, независимо
+                является он виновником при наступлении страхового случая или нет.
+                КАСКО компенсирует как ущерб, нанесенный вашему автомобилю, так и его угон или тотальную гибель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="questions__item">
+          <div class="questions__item-caption">
+            <div class="questions__item-question">
+              <span class="questions__item-number red-text">3.</span>
+              <div class="questions__item-subtitle">Отличие электронного КАСКО от бумажного полиса</div>
+            </div>
+            <button class="questions__item-btn">
+            </button>
+          </div>
+          <div class="questions__item-body">
+            <div class="body-wrap">
+              <p>
+                ОСАГО – обязательный вид страхования, который обеспечивает компенсацию ущерба пострадавшей стороне. При
+                этом водитель-виновник берет расходы на ремонт или восстановление своего автомобиля на себя.
+              </p>
+              <p>
+                Полис КАСКО – добровольное страхование, которое обеспечивает сохранность автомобиля водителя, независимо
+                является он виновником при наступлении страхового случая или нет.
+                КАСКО компенсирует как ущерб, нанесенный вашему автомобилю, так и его угон или тотальную гибель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="questions__item">
+          <div class="questions__item-caption">
+            <div class="questions__item-question">
+              <span class="questions__item-number red-text">4.</span>
+              <div class="questions__item-subtitle">Нужно ли КАСКО при автокредите? </div>
+            </div>
+            <button class="questions__item-btn">
+            </button>
+          </div>
+          <div class="questions__item-body">
+            <div class="body-wrap">
+              <p>
+                ОСАГО – обязательный вид страхования, который обеспечивает компенсацию ущерба пострадавшей стороне. При
+                этом водитель-виновник берет расходы на ремонт или восстановление своего автомобиля на себя.
+              </p>
+              <p>
+                Полис КАСКО – добровольное страхование, которое обеспечивает сохранность автомобиля водителя, независимо
+                является он виновником при наступлении страхового случая или нет.
+                КАСКО компенсирует как ущерб, нанесенный вашему автомобилю, так и его угон или тотальную гибель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="questions__item">
+          <div class="questions__item-caption">
+            <div class="questions__item-question">
+              <span class="questions__item-number red-text">5.</span>
+              <div class="questions__item-subtitle">Нужно ли иметь при себе полис КАСКО? </div>
+            </div>
+            <button class="questions__item-btn">
+            </button>
+          </div>
+          <div class="questions__item-body">
+            <div class="body-wrap">
+              <p>
+                ОСАГО – обязательный вид страхования, который обеспечивает компенсацию ущерба пострадавшей стороне. При
+                этом водитель-виновник берет расходы на ремонт или восстановление своего автомобиля на себя.
+              </p>
+              <p>
+                Полис КАСКО – добровольное страхование, которое обеспечивает сохранность автомобиля водителя, независимо
+                является он виновником при наступлении страхового случая или нет.
+                КАСКО компенсирует как ущерб, нанесенный вашему автомобилю, так и его угон или тотальную гибель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="questions__item">
+          <div class="questions__item-caption">
+            <div class="questions__item-question">
+              <span class="questions__item-number red-text">6.</span>
+              <div class="questions__item-subtitle">Франшиза по КАСКО </div>
+            </div>
+            <button class="questions__item-btn">
+            </button>
+          </div>
+          <div class="questions__item-body">
+            <div class="body-wrap">
+              <p>
+                ОСАГО – обязательный вид страхования, который обеспечивает компенсацию ущерба пострадавшей стороне. При
+                этом водитель-виновник берет расходы на ремонт или восстановление своего автомобиля на себя.
+              </p>
+              <p>
+                Полис КАСКО – добровольное страхование, которое обеспечивает сохранность автомобиля водителя, независимо
+                является он виновником при наступлении страхового случая или нет.
+                КАСКО компенсирует как ущерб, нанесенный вашему автомобилю, так и его угон или тотальную гибель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="questions__item">
+          <div class="questions__item-caption">
+            <div class="questions__item-question">
+              <span class="questions__item-number red-text">7.</span>
+              <div class="questions__item-subtitle">GAP по КАСКО </div>
+            </div>
+            <button class="questions__item-btn">
+            </button>
+          </div>
+          <div class="questions__item-body">
+            <div class="body-wrap">
+              <p>
+                ОСАГО – обязательный вид страхования, который обеспечивает компенсацию ущерба пострадавшей стороне. При
+                этом водитель-виновник берет расходы на ремонт или восстановление своего автомобиля на себя.
+              </p>
+              <p>
+                Полис КАСКО – добровольное страхование, которое обеспечивает сохранность автомобиля водителя, независимо
+                является он виновником при наступлении страхового случая или нет.
+                КАСКО компенсирует как ущерб, нанесенный вашему автомобилю, так и его угон или тотальную гибель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="questions__item">
+          <div class="questions__item-caption">
+            <div class="questions__item-question">
+              <span class="questions__item-number red-text">8.</span>
+              <div class="questions__item-subtitle">Нужно ли КАСКО водителям с большим стажем? </div>
+            </div>
+            <button class="questions__item-btn">
+            </button>
+          </div>
+          <div class="questions__item-body">
+            <div class="body-wrap">
+              <p>
+                ОСАГО – обязательный вид страхования, который обеспечивает компенсацию ущерба пострадавшей стороне. При
+                этом водитель-виновник берет расходы на ремонт или восстановление своего автомобиля на себя.
+              </p>
+              <p>
+                Полис КАСКО – добровольное страхование, которое обеспечивает сохранность автомобиля водителя, независимо
+                является он виновником при наступлении страхового случая или нет.
+                КАСКО компенсирует как ущерб, нанесенный вашему автомобилю, так и его угон или тотальную гибель.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="help-block help-block--reverse help-block--question">
+    <div class="container container--big">
+      <div class="help-block__inner">
+        <div class="help-block__content">
+          <h2 class="help-block__title main-title">
+            Есть вопросы?
+            <span class="red-text">Оставьте заявку!</span>
+          </h2>
+          <form action="" class="form">
+            <input id="phone-2" class="form__control form__input  form__control--border form__input_tel" type="tel"
+              name="phone" autocomplete="off" data-error="Введите номер телефона" data-intl-tel-input-id="4"
+              placeholder="999 999 9999" im-insert="true">
+            <input type="hidden" class="code-country">
+            <div class="help-block__action">
+              <button class="btn btn--main">Оставить заявку</button>
+            </div>
+            <div class="form__text">
+              Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных
+            </div>
+          </form>
+        </div>
+        <div class="help-block__img">
+          <img src="./img/question-block_img.png" alt="person">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal-overlay">
+    <div class="modal" id="modal-order">
+      <button class="modal__close"></button>
+      <div class="help-block help-block--reverse help-block--question">
+        <div class="help-block__inner">
+          <div class="help-block__content rise-up">
+            <h2 class="help-block__title main-title">
+              Оставьте заявку!
+              <span class="red-text">Мы перезвоним</span>
+            </h2>
+            <form action="" class="form">
+              <input id="phone-3" class="form__control form__input  form__control--border form__input_tel" type="tel"
+                name="phone" autocomplete="off" data-error="Введите номер телефона" data-intl-tel-input-id="4"
+                placeholder="999 999 9999" im-insert="true" style="padding-left: 128px;">
+              <input type="hidden" class="code-country">
+              <div class="help-block__action">
+                <button class="btn btn--main" type="submit">Оставить заявку</button>
+              </div>
+              <div class="form__text">
+                Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных
+              </div>
+            </form>
+          </div>
+          <div class="help-block__img">
+            <img src="./img/question-block_img.png" alt="person">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-fill">
+      <button class="modal__close"></button>
+      <div class="modal__img">
+        <img src="./img/modal-img_2.png" alt="">
+      </div>
+      <div class="modal__content rise-up">
+        <h2 class="intro__title main-title">
+          Для расчета<br>
+          заполните данные
+        </h2>
+        <form action="" class="form">
+          <div class="form__wrap">
+            <div class="form__group">
+              <label class="label" for="gos">
+                Введите госномер
+              </label>
+              <input type="text" id="gos" class="form__control form__control--gos selector form__control--border" placeholder="А 000 АА 000">
+            </div>
+            <div class="form__group">
+              <label class="label" for="phone">
+                Введите номер телефона
+              </label>
+              <input id="phone-4" class="form__control form__control--border form__input form__control--tel form__input_tel" type="tel"
+                name="phone" autocomplete="off" data-error="Введите номер телефона" data-intl-tel-input-id="4"
+                placeholder="999 999 9999" im-insert="true" style="padding-left: 128px;">
+              <input type="hidden" class="code-country">
+            </div>
+          </div>
+          <button class="btn btn--main btn--big" type="submit">Рассчитать стоимость</button>
+          <div class="form__text">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных</div>
+          <div class="form__notify">
+            <span class="icon">
+              <img src="./img/icons/notify-icon.svg" alt="">
+            </span>
+            <p>
+              Заполнение формы не предполагает обязательное оформление страховки. Система посчитает стоимость полиса и
+              предложит лучшие варианты.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container container--big">
+      <div class="footer__top">
+        <a href="#" class="logo">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+        <div class="wrap-actions">
+          <div class="header__actions main-actions">
+            <div class="social">
+              <a href="#" class="social__link">
+                <img src="./img/telegramm.svg" alt="">
+              </a>
+              <a href="#" class="social__link">
+                <img src="./img/whatsapp.svg" alt="">
+              </a>
+            </div>
+            <a href="tel:88002001050" class="phone">8 800 200 10 50</a>
+            <button class="btn btn--text">
+              <span class="btn__text" data-modal="#modal-order">Заказать звонок</span>
+              <span class="btn__icon">
+                <img src="./img/arrow-right.svg" alt="">
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__middle">
+        <div class="footer__text">
+          <p>
+            Обращаем ваше внимание на то, что данный Интернет-сайт носит исключительно информационный характер и ни при
+            каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса
+            Российской Федерации. Для получения подробной информации о предложениях на новые автомобили и условиях их
+            продажи обращайтесь к менеджерам по продажам «50Car» по контактам или формам обратной связи размещенных на
+            данном сайте. Права на сайт принадлежат ООО «Майкар» (ИНН 5047059383, ОГРН 1045009553577) тел. 8 (800)
+            333-52-38 (бесплатно по России) , адрес эл. почты client@50car.ru
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-text">
+          ООО «Фифтикар Рус». Все права защищены. 2021 г.
+        </div>
+        <a href="#" class="link-confidence btn btn--text">
+          <span class="btn__text">Политика конфиденциальности</span>
+          <span class="btn__icon">
+            <img src="./img/arrow-policy.svg" alt="">
+          </span>
+        </a>
+        <div class="footer__bottom-logo">
+          <div class="footer__bottom-caption">Разработка и дизайн</div>
+          <div class="footer-logo">R</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendors.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7-beta.23/jquery.inputmask.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
